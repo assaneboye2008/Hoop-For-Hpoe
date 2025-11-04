@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hoops for Hope — Youth Basketball Charity</title>
+  <meta name="description" content="Hoops for Hope — empowering youth through basketball, sport, education and community. Founded by Assane Boye, Dubai." />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48'><text x='0' y='34' font-size='34'>🏀</text></svg>">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Inline SVG logo: basketball + sun/heart -->
+      <a class="logo" href="#top" aria-label="Hoops for Hope home">
+        <svg width="54" height="54" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="false">
+          <title>Hoops for Hope logo</title>
+          <!-- sun -->
+          <circle cx="60" cy="36" r="18" fill="#FFD166" />
+          <!-- heart -->
+          <path d="M60 42c-7-8-20-6-24 4-4 10 2 22 24 36 22-14 28-26 24-36-4-10-17-12-24-4z" fill="#FF6B6B" transform="translate(0,0) scale(.65) translate(32,12)"/>
+          <!-- basketball outline (transparent fill) -->
+          <g stroke="#F25C05" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="60" cy="72" r="34" stroke="#F25C05" />
+            <path d="M60 38 v68" />
+            <path d="M26 72 a34 34 0 0 0 68 0" />
+            <path d="M94 52 a34 34 0 0 0 -68 0" />
+          </g>
+        </svg>
+        <span class="brand">Hoops for Hope</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">Menu</button>
+        <ul id="navMenu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Play. Learn. Rise.<span class="accent"> </span></h1>
+          <p class="lead">Hoops for Hope empowers youth in Dubai through basketball, mentorship and community programs. Join us to train, mentor, or support our cause.</p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#programs">Explore Programs</a>
+            <a class="btn outline" href="#donate">Donate Now</a>
+          </div>
+
+          <div class="founder">
+            <img src="https://images.unsplash.com/photo-1547921260-2f68a914f27a?w=80&q=60&auto=format&fit=crop" alt="Founder" />
+            <div>
+              <strong>Founder</strong>
+              <p>Assane Boye — Dubai</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <!-- placeholder court/children image -->
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1200&q=60&auto=format&fit=crop" alt="Kids playing basketball" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about container">
+      <h2>About Hoops for Hope</h2>
+      <p>We run free weekly basketball training, mentorship sessions, and education support for young people from diverse backgrounds. Our goal is to build confidence, teamwork and open pathways to opportunity.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Our Mission</h3>
+          <p>Use sport to teach life skills, increase school engagement and create healthy routines for young people across Dubai.</p>
+        </article>
+        <article class="card">
+          <h3>Who We Serve</h3>
+          <p>Kids & teens (8–18), especially those with limited access to organized sports and mentorship programs.</p>
+        </article>
+        <article class="card">
+          <h3>Our Values</h3>
+          <ul>
+            <li>Inclusion</li>
+            <li>Growth</li>
+            <li>Community</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Programs -->
+    <section id="programs" class="programs">
+      <div class="container">
+        <h2>Programs</h2>
+        <div class="grid">
+          <div class="program">
+            <h3>Weekly Training</h3>
+            <p>Skill sessions led by certified coaches focusing on fundamentals, fitness and teamwork.</p>
+            <p><strong>When:</strong> Saturdays & Wednesdays</p>
+          </div>
+          <div class="program">
+            <h3>Mentorship</h3>
+            <p>One-to-one and group mentoring — life skills, study support and career guidance.</p>
+            <p><strong>When:</strong> Monthly meetups</p>
+          </div>
+          <div class="program">
+            <h3>Community Events</h3>
+            <p>Tournaments, family days and charity fundraisers that bring people together.</p>
+            <p><strong>Next event:</strong> Community 3-on-3 — Date TBA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events" class="events container">
+      <h2>Upcoming Events</h2>
+      <ul class="events-list" id="eventsList">
+        <!-- JS will populate a sample list to show dynamic content -->
+      </ul>
+    </section>
+
+    <!-- Donate -->
+    <section id="donate" class="donate">
+      <div class="container donate-inner">
+        <div>
+          <h2>Support Hoops for Hope</h2>
+          <p>Your donation helps with equipment, court rentals, travel to tournaments, and scholarships for talented players.</p>
+          <div class="donate-actions">
+            <a class="btn primary" href="#" id="donateBtn">Donate $25</a>
+            <a class="btn outline" href="#" id="sponsorBtn">Become a Sponsor</a>
+          </div>
+        </div>
+        <form id="donationForm" class="donation-form" aria-label="Donation form" onsubmit="return false;">
+          <label>
+            Full name
+            <input type="text" id="donorName" required placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" id="donorEmail" required placeholder="you@example.com" />
+          </label>
+          <label>
+            Amount (USD)
+            <input type="number" id="donorAmount" required min="5" value="25" />
+          </label>
+          <button class="btn primary" id="submitDonation">Gift Support</button>
+          <p class="small">We are not processing payments here — link to your payment provider (Stripe/PayPal) during deployment.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Volunteer / Contact -->
+    <section id="contact" class="contact container">
+      <h2>Get Involved / Contact Us</h2>
+      <div class="contact-grid">
+        <div>
+          <h3>Volunteer</h3>
+          <p>Coaches, assistants, event helpers — we welcome your time and skills.</p>
+          <a class="btn outline" href="mailto:hello@hoopsforhope.org?subject=Volunteer%20interest">Email Us</a>
+        </div>
+
+        <form id="contactForm" class="contact-form" aria-label="Contact form">
+          <label>
+            Full name
+            <input type="text" id="contactName" required placeholder="Your full name" />
+          </label>
+          <label>
+            Email
+            <input type="email" id="contactEmail" required placeholder="you@example.com" />
+          </label>
+          <label>
+            Message
+            <textarea id="contactMessage" rows="4" required placeholder="Tell us how you'd like to help..."></textarea>
+          </label>
+          <button class="btn primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="brandline">
+          <small>© <span id="thisYear"></span> Hoops for Hope — Founder: Assane Boye</small>
+          <nav>
+            <a href="#about">About</a>
+            <a href="#programs">Programs</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <p class="tiny">Designed for youth, with ♥. Location: Dubai, UAE.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
